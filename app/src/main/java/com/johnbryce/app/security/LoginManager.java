@@ -28,7 +28,7 @@ public class LoginManager {
 	private CustomerService customerService;
 
 	@Autowired
-	TokenManager tokenManager;
+	private TokenManager tokenManager;
 
 	public String login2(String email, String password, ClientType clientType) throws LoginException {
 		switch (clientType) {
